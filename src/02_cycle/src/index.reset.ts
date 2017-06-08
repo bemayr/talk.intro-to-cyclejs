@@ -12,8 +12,7 @@ function main(sources: { DOM: DOMSource }) {
   const reset$ = sources.DOM
     .select(".reset")
     .events("click")
-    .mapTo(0)
-    .startWith(0);
+    .startWith(undefined);
 
   const count$ = reset$.map(_ => action$.fold((x, y) => x + y, 0)).flatten();
 
