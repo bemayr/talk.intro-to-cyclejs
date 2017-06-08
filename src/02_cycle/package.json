@@ -1,0 +1,55 @@
+{
+  "name": "cyclejs-demo",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "cycle-scripts-one-fits-all": "2.0.0"
+  },
+  "dependencies": {
+    "@cycle/dom": "^17.1.0",
+    "@cycle/http": "^13.2.0",
+    "@cycle/run": "^3.1.0",
+    "@cycle/time": "^0.8.0",
+    "@types/hyperscript": "0.0.2",
+    "cycle-onionify": "^3.1.0",
+    "xstream": "^10.3.0"
+  },
+  "scripts": {
+    "start": "cycle-scripts start",
+    "test": "cycle-scripts test",
+    "build": "cycle-scripts build",
+    "eject": "cycle-scripts eject"
+  },
+  "nyc": {
+    "include": [
+      "src"
+    ],
+    "reporter": [
+      "html",
+      "text-summary"
+    ]
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "plugins": [
+          "istanbul"
+        ]
+      }
+    },
+    "presets": [
+      [
+        "env",
+        {
+          "modules": false,
+          "targets": {
+            "browsers": [
+              "last 2 versions"
+            ]
+          },
+          "useBuiltIns": true
+        }
+      ]
+    ]
+  }
+}
