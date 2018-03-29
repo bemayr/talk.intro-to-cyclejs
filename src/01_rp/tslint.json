@@ -1,0 +1,10 @@
+{
+    "extends": [
+        "tslint:latest",
+        "tslint-config-prettier"
+    ],
+    "rules": {
+        "no-console": false,
+        "no-submodule-imports": false
+    }
+}

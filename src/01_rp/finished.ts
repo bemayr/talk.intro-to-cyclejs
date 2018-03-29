@@ -1,4 +1,4 @@
-import * as Rx from "rxjs/Rx";
+import { Observable } from "rxjs/Rx";
 
 // --- ARRAYS --- //
 const inSpace = [0, 1, 2, 3, 4, 5];
@@ -8,8 +8,8 @@ inSpace
   .forEach(x => console.log(x));
 
 // --- STREAMS/OBSERVABLES --- //
-const inTime = Rx.Observable.of(1, 2, 3, 4, 5, 6);
-const inTime = Rx.Observable.interval(500).take(20);
+// const inTime = Observable.of(1, 2, 3, 4, 5, 6);
+const inTime = Observable.interval(500).take(20);
 inTime
   .filter(x => x % 2 === 0)
   .map(x => `${x * 10}%`)
@@ -29,6 +29,4 @@ const percentages = inTime
   .share();
 
 percentages.subscribe(x => console.log(x));
-setTimeout(function() {
-  percentages.subscribe(x => console.log(x));
-}, 2000);
+setTimeout(() => percentages.subscribe(x => console.log(x)), 2000);

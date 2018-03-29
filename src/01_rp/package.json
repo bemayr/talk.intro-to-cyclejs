@@ -2,13 +2,18 @@
   "name": "02_rp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "demo.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Bernhard Mayr <bernhard@mayr.io>",
   "license": "ISC",
   "dependencies": {
-    "rxjs": "^5.4.0"
+    "rxjs": "5.5.8"
+  },
+  "devDependencies": {
+    "tslint": "5.9.1",
+    "tslint-config-prettier": "1.10.0",
+    "typescript": "2.8.1"
   }
 }
