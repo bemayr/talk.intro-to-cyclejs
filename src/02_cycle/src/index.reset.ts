@@ -1,7 +1,13 @@
-import { DOMSource, button, div, makeDOMDriver, p } from "@cycle/dom";
+import {
+  button,
+  div,
+  DOMSource,
+  makeDOMDriver,
+  p
+  } from '@cycle/dom';
+import { run } from '@cycle/run';
+import xs from 'xstream';
 
-import { run } from "@cycle/run";
-import xs from "xstream";
 
 function main(sources: { DOM: DOMSource }) {
   const action$ = xs.merge(

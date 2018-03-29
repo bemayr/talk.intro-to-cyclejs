@@ -3,16 +3,14 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "cycle-scripts-one-fits-all": "2.0.0"
+    "cycle-scripts-one-fits-all": "^2.0.0",
+    "tslint-config-prettier": "^1.10.0"
   },
   "dependencies": {
-    "@cycle/dom": "^17.1.0",
-    "@cycle/http": "^13.2.0",
-    "@cycle/run": "^3.1.0",
-    "@cycle/time": "^0.8.0",
-    "@types/hyperscript": "0.0.2",
-    "cycle-onionify": "^3.1.0",
-    "xstream": "^10.3.0"
+    "@cycle/dom": "^20.2.0",
+    "@cycle/run": "^4.1.0",
+    "@types/hyperscript": "0.0.3",
+    "xstream": "^11.2.0"
   },
   "scripts": {
     "start": "cycle-scripts start",

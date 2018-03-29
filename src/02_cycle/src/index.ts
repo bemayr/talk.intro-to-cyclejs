@@ -1,11 +1,17 @@
+import {
+  button,
+  div,
+  DOMSource,
+  makeDOMDriver,
+  p
+  } from '@cycle/dom';
+import { run } from '@cycle/run';
+import xs from 'xstream';
 /* --------------------------------------------------------------------------- */
 /* https://cycle.js.org/basic-examples.html#basic-examples-increment-a-counter */
 /* --------------------------------------------------------------------------- */
 
-import { DOMSource, button, div, makeDOMDriver, p } from "@cycle/dom";
 
-import { run } from "@cycle/run";
-import xs from "xstream";
 
 function main(sources: { DOM: DOMSource }) {
   const action$ = xs.merge(
