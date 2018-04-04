@@ -8,6 +8,8 @@
 All the examples can be found under `./src`.
 
 ## Slides
-The slides are available on OneDrive [here](https://mayrio-my.sharepoint.com/personal/bernhard_mayr_io/_layouts/15/guestaccess.aspx?docid=0cb18e312559a4c258b4f797e4da0277d&authkey=AVbvrh8T7VgY6RYNaymJjuo) or by scanning the following QR-Code.
+The slides are available [@./slides.pptx](./slides.pptx) and [@OneDrive](https://mayrio-my.sharepoint.com/:p:/g/personal/bernhard_mayr_io/EZv0VsQVM7tAlYlP3b-HcU8BWjRdojuml8Lf1l3suGNKCw?e=gmjuMp).
 
-![Slides QR Code](qr.slides.png)
+## Presentations
+- **07.06.2017:** [stahlstadt.js // 14. Meetup - Stahlstadt.js](https://www.meetup.com/de-DE/stahlstadt-js/events/239660401/)
+- **29.03.2018:** [ReactJS Tirol // React March Meetup](https://www.meetup.com/de-DE/ReactJS-Tirol/events/248158228/) 
